@@ -1,0 +1,19 @@
+<ion-view view-title=" {{ title }}">
+  <ion-content scroll="false">
+    
+    <map on-create="mapCreated(map)" id="map">
+    	
+    </map>
+    
+    <div id="crosshair"></div>
+    
+  </ion-content>
+  
+  <ion-footer-bar class="bar-dark">
+
+  	<button ng-click="addCenterMarker()" class="button icon-left ion-location button-balanced">Add Marker </button>
+  	<button ng-click="closePlot()" class="button icon-left ion-checkmark button-balanced" id="btn_done">Done</button>
+  	<button ng-click="clearMarkers()" class="button icon-left ion-close-circled button-assertive"></button>
+  </ion-footer-bar>
+  
+</ion-view>

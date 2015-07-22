@@ -1,0 +1,20 @@
+<ion-view view-title=" {{ title }}">
+	<ion-content>
+		<!--
+		<ion-list>
+			<ion-item ng-repeat="plot in plots" href="#app/plot/{{plotId}}">
+				{{ plot.plot_name}}
+			</ion-item>
+		</ion-list>
+		-->
+		
+		<div class="list plot_list">
+			<a ng-repeat="plot in plots" class="item item-icon-left" href="#/app/plot/{{plot.plot_id}}">
+				<i class="icon ion-leaf balanced"></i>
+				<h2>{{ plot.plot_name}}</h2>
+				<p>Plot Size: {{plot.plot_size | plotSize}}</p>
+			</a>
+		</div>
+		
+	</ion-content>
+</ion-view>

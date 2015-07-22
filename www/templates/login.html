@@ -1,0 +1,40 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-dark ">
+    <h1 class="title">Sign in to Continue</h1>
+    <!---
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+    -->
+  </ion-header-bar>
+  <ion-content>
+   
+	<label class="item">
+		<button class="button button-block button-positive icon-left ion-social-facebook" ng-click="facebookLogin()">Sign in with Facebook</button>
+	</label>
+   
+    <h2 style="text-align:center; font-weight: bolder; margin: 20px 0; color:#727272;"> &mdash; OR &mdash;</h2>
+    <form ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Email Address</span>
+          <input type="email" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="loginData.password">
+        </label>
+        <label class="item">
+          <button class="button button-block button-balanced icon-left ion-leaf" type="submit">Sign In</button>
+        </label>
+      </div>
+    </form>
+    
+    <div class="row">
+    	<div class="col">
+    		<h4>Don't Have an account? <a href="#/app/register" ng-click="registerPage()">Sign up</a> for free today!</h4>
+    	</div>
+    </div>
+    
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,24 @@
+<ion-view view-title="Plot Details">
+	<ion-content>
+
+		<div class="list">
+			<span class="item item-button-right item-icon-left">
+				<i class="icon ion-leaf balanced"></i>
+				<h2>{{ plot.plot_name }}</h2>
+				<p>{{ plot.plot_size | plotSize }}</p>
+				<div class="button-menu">
+					<a class="button button-clear button-stable">
+						<i class="icon ion-gear-b"></i>
+					</a>
+					<a class="button button-clear button-stable">
+						<i class="icon ion-close-circled assertive"></i>
+					</a>
+				</div>
+			</span>
+		</div>
+		
+		<displaymap on-create="mapCreated(map)" id="map"></displaymap>
+
+				
+	</ion-content>
+</ion-view>
